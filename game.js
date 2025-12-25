@@ -31,7 +31,7 @@ const SETTINGS = {
 
   // ✅ 특대 홍 등장 시간(초)
   SPECIAL_5X_TIME: 90,
-  SPECIAL_15X_TIME: 150,
+  SPECIAL_8X_TIME: 150,
 
   // ✅ 특대 홍 속도
   SPECIAL_SPEED_BASE: 4.2,
@@ -370,5 +370,6 @@ function resetGame() {
   special5xSpawned = false;
   special15xSpawned = false;
 }
+
 
 requestAnimationFrame(loop);
