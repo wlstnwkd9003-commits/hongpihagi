@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>홍피하기</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      font-family: Arial, sans-serif;
+      user-select: none;
+    }
+    .wrap {
+      text-align: center;
+      color: #fff;
+    }
+    canvas {
+      background: #fff;
+      border: 4px solid red;
+    }
+    .hint {
+      margin-top: 8px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2 style="margin:0 0 10px;">홍피하기</h2>
+    <canvas id="game" width="900" height="1400"></canvas>
+    <div class="hint">← → 이동 / R 재시작 / 첫 키 입력 시 BGM 재생</div>
+  </div>
+
+  <audio id="bgm" src="01.mp3" loop></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
